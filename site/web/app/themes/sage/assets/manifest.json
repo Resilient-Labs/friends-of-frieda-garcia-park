@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "mobile-navigation.js": {
+      "files": [
+        "scripts/mobile-navigation.js"
+      ]
+    },
+    "gallery.js": {
+      "files": [
+        "scripts/gallery.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://friends-of-frieda-garcia-park.test"
+  }
+}

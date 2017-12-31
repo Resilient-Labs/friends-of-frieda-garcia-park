@@ -1,0 +1,18 @@
+.blog.template {
+    display: flex;
+    margin: 0 auto;
+    max-width: $max-row-container-width;
+
+    .blog-page-posts {
+        flex: 2;
+    }
+    .social-siderbar {
+        flex: 1;
+    }
+}
+.page-numbers { 
+    &:after {
+        content: "|";
+        padding: 0 5px;
+    }
+}

@@ -1,0 +1,91 @@
+.header {
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    position: relative;
+    z-index: $header-z;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: $max-row-container-width;
+        padding: $spacer-xs;
+        width: 100%;
+    }
+    .logo {
+
+        img {
+            width: auto;
+            max-height: 70px;
+
+            @media only screen and (max-width: $max-mobile-width) {
+                max-height: 40px;
+            }
+        }
+    }
+    .header-navigation-wrapper {
+        display: inline-flex;
+        flex: 1;
+
+        @media only screen and (max-width: $max-mobile-width) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        li {
+            margin: 0 $spacer-xs;
+            display: inline-flex;
+        }
+        a {
+            text-decoration: none;
+        }
+        .menu-item-has-children {
+            position: relative;
+            .sub-menu {
+                display: none!important;
+                position: absolute;
+                transition: all 400ms ease-out;
+            }
+            &:hover {
+                .sub-menu {
+                    background-color: $color-white;
+                    color: $color-black;
+                    display: flex!important;
+                    right: 0;
+                    top: 100%;
+                    width: auto;
+                    padding: 0;
+                    box-shadow: $box-shadow1;
+                    margin: 0;
+                    min-width: 200px;
+        
+                    li {
+                        margin: 0;
+                        width: 100%;
+
+                        &:hover {
+                            border-left: 2px solid $color-tertiary;
+                        }
+                    }
+        
+                    a {
+                        padding: $spacer-xs;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+} 

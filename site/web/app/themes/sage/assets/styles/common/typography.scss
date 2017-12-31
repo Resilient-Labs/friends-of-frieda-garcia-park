@@ -1,0 +1,74 @@
+// Import External Fonts and Handle All Typographic Styling
+// @import url('https://fonts.googleapis.com/css?family=Oswald|Fanwood+Text')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
+body, html {
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h1 {
+    font-size: 2em;
+    letter-spacing: 0.2px;
+}
+h2 {
+    font-size: 1.7em;
+    letter-spacing: 0.2px;
+}
+h3 {
+    font-size: 1.5em;
+    letter-spacing: 0.2px;
+}
+h4 {
+    font-size: 1.35em;
+    letter-spacing: 0.2px;
+}
+h5 {
+    font-size: 1.25em;
+    letter-spacing: 0.2px;
+}
+h6 {
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
+}
+p {  
+    font-family: $font-secondary;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    margin-bottom: 1em;
+}
+blockquote {
+    margin: 0;
+    font-size: 1.4em;
+    font-family: $font-primary;
+    line-height: 1.45;
+
+    &:before {
+        content: '"';
+        display: block;
+        font-size: 2em;
+    }
+    &:after {
+        content: '"';
+    }
+}
+small {
+
+}
+a {
+
+}
+li {
+    line-height: 1.5;
+}
+

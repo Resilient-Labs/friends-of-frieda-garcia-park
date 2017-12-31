@@ -1,0 +1,19 @@
+.default.layout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.default-row {
+    max-width: $max-row-container-width;
+    padding: 0 $spacer-xs;
+    width: 100%;
+}
+.empty-state-section {
+    margin: 0 auto;
+
+    .empty-state-row {
+        margin: 0 auto;
+        max-width: $max-row-container-width;
+        padding: 0 $spacer-xs;
+    }
+}

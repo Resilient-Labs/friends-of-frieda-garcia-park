@@ -1,0 +1,26 @@
+.content-single {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: $max-posts-container-width;
+    width: 100%;
+
+    p {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        img,
+        &+ img {
+            display: inline-flex;
+            height: auto;
+            max-height: $max-image-height;
+            width: 49%;
+        }
+    }
+
+    @media only screen and (max-width: $max-mobile-width) {
+        padding: $spacer-xs;
+    }
+}
