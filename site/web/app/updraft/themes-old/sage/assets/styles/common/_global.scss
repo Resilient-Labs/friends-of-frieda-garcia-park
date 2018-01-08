@@ -1,0 +1,69 @@
+/*-----------------------------------
+# Font
+------------------------------------*/
+@font-face {
+  font-family: 'Roboto Slab Regular';
+  src: url('../../assets/fonts/RobotoSlab-Regular.eot');
+  src: url('../../assets/fonts/RobotoSlab-Regular.woff2') format('woff2'),
+       url('../../assets/fonts/RobotoSlab-Regular.woff') format('woff'),
+       url('../../assets/fonts/RobotoSlab-Regular.ttf') format('truetype'),
+       url('../../assets/fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Slab Light';
+  src: url('../../assets/fonts/RobotoSlab-Light.eot');
+  src: url('../../assets/fonts/RobotoSlab-Light.woff2') format('woff2'),
+       url('../../assets/fonts/RobotoSlab-Light.woff') format('woff'),
+       url('../../assets/fonts/RobotoSlab-Light.ttf') format('truetype'),
+       url('../../assets/fonts/RobotoSlab-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+/*-----------------------------------
+# Resets & Standardize
+------------------------------------*/
+.clearfix:before,
+.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+blockquote {
+  margin: $f-size * 4 0 $f-size * 1.5 0;
+  font-family: $rob-prime;
+  font-size: $h-size;
+}
+a:link,
+a:visited,
+a:active{
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+a:hover{
+  color: $pink;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+ul {
+  list-style-type: none;
+}
+button , .btn {
+  padding: 15px 30px;
+}

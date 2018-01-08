@@ -1,70 +1,26 @@
-.btn,
-button,
-input[type=submit],
-.tribe-events-button {
-    color: inherit;
-    display: inline-block;
-    outline: none;
-    padding: 15px 30px;
-    text-decoration: none;
-    position: relative;
-    overflow:hidden;
-    background: none;
-    z-index: 1;
-    cursor: pointer;
-    transition: 100ms ease-in;
-
-    &:hover {
-        color: $color-white!important;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        background: $color-tertiary;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 100%;
-        transition: top 150ms ease-in;
-        z-index: -1;
-    }
-    &:hover:before {
-        top: 0;
-    }
+/*-----------------------------------
+# Button Reset
+------------------------------------*/
+button{
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  color: #26589F;
+  font-family: $rob-sec;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
 }
-
-
-.generic-row {
-    a {
-        color: inherit;
-        display: inline-block;
-        outline: none;
-        padding: 15px 30px;
-        text-decoration: none;
-
-        position: relative;
-        overflow:hidden;
-        background: none;
-        z-index: 1;
-        cursor: pointer;
-        transition: 100ms ease-in;
-    
-        &:hover {
-            color: $color-white!important;
-        }
-        &:before {
-            content: "";
-            position: absolute;
-            background: $color-tertiary;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 100%;
-            transition: top 150ms ease-in;
-            z-index: -1;
-        }
-        &:hover:before {
-            top: 0;
-        }
-    }
-}
+ button:hover{
+   color: $pink;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+ }

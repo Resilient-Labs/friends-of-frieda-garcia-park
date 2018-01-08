@@ -1,0 +1,51 @@
+.generic-card {
+    width: calc(25% - 30px);
+    figure {
+      background: $pink;
+      margin: auto;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      img {
+        text-align: center;
+        width: 70%;
+      }
+    }
+    div {
+      border: 1px solid $pink;
+      margin: 0;
+      padding: 15px;
+      min-height: 120px;
+      width: 100%;
+    }
+  }
+
+  /*-----------------------------------
+  ## Wide Screens, Large Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 1200px) {
+
+  }
+  /*-----------------------------------
+  ## Desktops, Medium Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 992px)  {
+
+  }
+  /*-----------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 768px)  {
+    .generic-card {
+      width: calc(50% - 30px);
+      margin: 0 15px 15px 15px;
+    }
+  }
+  /*-----------------------------------
+  ## Phones, Extra Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width: 480px) {
+    .generic-card {
+      width: calc(100% - 30px);
+    }
+  }

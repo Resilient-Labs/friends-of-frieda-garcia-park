@@ -1,0 +1,48 @@
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px) {
+
+}
+/*------------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  #tribe-bar-collapse-toggle{
+    background: none;
+  }
+  #tribe-bar-form.tribe-bar-collapse .tribe-bar-views-inner{
+    padding: 0 0 40px 0;
+  }
+  #tribe-bar-form.tribe-bar-collapse .tribe-bar-views-inner>label{
+    margin: 6px 0 4px 0;
+  }
+  .tribe-events-calendar td.tribe-events-present.mobile-active,
+  .tribe-events-calendar td.tribe-events-present.mobile-active div[id*='tribe-events-daynum-'],
+  .tribe-events-calendar td.tribe-events-present.mobile-active div[id*='tribe-events-daynum-'] a{
+    background: $baby-blue;
+    height: 100%;
+    margin: 0;
+    padding-top: 6px;
+  }
+  div#tribe-events {
+      padding: 15px;
+  }
+}
+/*------------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 480px)  {
+  .events-list .tribe-events-loop, .tribe-events-day .tribe-events-loop {
+    padding: 0 15px;
+  }
+  div#tribe-events {
+      padding: 0px;
+  }
+}

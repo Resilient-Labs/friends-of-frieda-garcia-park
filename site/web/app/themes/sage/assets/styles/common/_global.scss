@@ -1,31 +1,79 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    color: $color-black;
+/*-----------------------------------
+# Font
+------------------------------------*/
+@font-face {
+  font-family: 'Roboto Slab Regular';
+  src: url('../../assets/fonts/RobotoSlab-Regular.eot');
+  src: url('../../assets/fonts/RobotoSlab-Regular.woff2') format('woff2'),
+       url('../../assets/fonts/RobotoSlab-Regular.woff') format('woff'),
+       url('../../assets/fonts/RobotoSlab-Regular.ttf') format('truetype'),
+       url('../../assets/fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
-/* apply a natural box layout model to all elements, but allowing components to change */
+@font-face {
+  font-family: 'Roboto Slab Light';
+  src: url('../../assets/fonts/RobotoSlab-Light.eot');
+  src: url('../../assets/fonts/RobotoSlab-Light.woff2') format('woff2'),
+       url('../../assets/fonts/RobotoSlab-Light.woff') format('woff'),
+       url('../../assets/fonts/RobotoSlab-Light.ttf') format('truetype'),
+       url('../../assets/fonts/RobotoSlab-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+/*-----------------------------------
+# Resets & Standardize
+------------------------------------*/
+.clearfix:before,
+.clearfix:after{
+  content: "";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
-    box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.1em;
 }
-
-*, *:before, *:after {
-    box-sizing: inherit;
-    color: inherit;
+body {
+  margin: 0 auto;
+  font-size: $f-size;
+  font-family: $rob-sec;
+  font-weight: 300;
 }
-
-button {
-    cursor: pointer;
-    border: none;
-    -webkit-appearance: none;
-    &:focus {
-    outline: none;
-    }
+blockquote {
+  margin: $f-size * 4 0 $f-size * 1.5 0;
+  font-family: $rob-prime;
+  font-size: $h-size;
 }
-
-img {
-    display: block;
+a:link,
+a:visited,
+a:active{
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
 }
-
-a {
-    cursor: pointer;
+a:hover{
+  color: $pink;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 1.5rem 0;
+  font-family: $rob-prime;
+  font-size: $h-size;
+  text-transform: capitalize;
+}
+ul {
+  list-style-type: none;
 }

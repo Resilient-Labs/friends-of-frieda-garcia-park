@@ -2,25 +2,26 @@
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 @import "common/global";
-@import "common/typography";
 @import "components/buttons";
 @import "components/comments";
+@import "components/home-banner";
+@import "components/generic-row";
+@import "components/generic-card";
+@import "components/generic-four-cards-section";
 @import "components/forms";
 @import "components/grid";
-@import "components/wp-classes";
+@import "components/content-block";
 @import "components/hero-banner";
-@import "components/generic-row";
-@import "components/blockquote";
+@import "components/wp-classes";
 @import "components/card-alt";
-@import "components/mobile-navigation";
-@import "layouts/blog";
-@import "layouts/events";
-@import "layouts/gallery";
 @import "layouts/header";
+@import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
-@import "layouts/sidebar";
+@import "layouts/tinymce";

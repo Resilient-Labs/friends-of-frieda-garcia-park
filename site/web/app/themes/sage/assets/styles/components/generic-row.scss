@@ -1,97 +1,116 @@
-.generic-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    max-width: $max-row-container-width;
-    margin: 0 auto;
-    padding: 30px $spacer-xs;
-    &:nth-of-type(3n+0) {
-        .generic-row-media-wrapper {
-            border-left: 4px solid $color-primary;
-        }
-        h1,
-        h2,
-        h3 {
-            color: $color-primary;
-        }
-        a {
-            background-color: $color-primary;
-        }
+.host-an-event{
+  .generic-row{
+    .generic-row-media-wrapper{
+      background: $sea-green
     }
-    &:nth-of-type(3n+1) {
-        .generic-row-media-wrapper {
-            border-left: 4px solid $color-secondary;
-        }
-        h1,
-        h2,
-        h3 {
-            color: $color-secondary;
-        }
-        a {
-            background-color: $color-secondary;
-        }
-    }
-    &:nth-of-type(3n+2) {
-        .generic-row-media-wrapper {
-            border-left: 4px solid $color-tertiary;
-        }
-        h1,
-        h2,
-        h3 {
-            color: $color-tertiary;
-        }
-        a {
-            background-color: $color-tertiary;
-        }
-    }
-    &:nth-of-type(odd) {
-        .generic-row-media-wrapper {
-            order: 2;
-        }
-    }
-    .generic-row-media-wrapper {
-      width: 40%;
-      box-shadow: $box-shadow1;
+  }
+}
 
+.generic-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding: 30px 0;
+  &:first-of-type{
+    margin-top: 60px;
+  }
+  &:nth-of-type(odd) {
+    .generic-row-media-wrapper {
+      order: 2;
       img {
+        top: -15px;
+        left: 15px;
         width: 100%;
-        height: 100%;
-        max-height: $max-image-height;
-        object-position: center;
-        object-fit: cover;
-        display: block;
       }
     }
-    .generic-row-content-wrapper {
-        width: 56%;
+  }
+  .generic-row-media-wrapper,
+  .generic-row-content-wrapper{
+    margin: 30px;
+    width: calc(50% - 60px);
+  }
+  .generic-row-content-wrapper {
+    h2 {
+      font-size: $h-size * 1.5;
+    }
+  }
+  img {
+    top: -15px;
+    left: -15px;
+    width: 100%;
+  }
+  .cta {
+    color: $white;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+  }
+}
+.generic-row:nth-of-type(2) .generic-row-media-wrapper {
+  border: 1px solid $sea-green;
+}
+.generic-row:nth-of-type(3) .generic-row-media-wrapper {
+  border: 1px solid $baby-blue;
+}
+.generic-row:nth-of-type(4) .generic-row-media-wrapper {
+  border: 1px solid $pink;
+}
+.generic-row:nth-of-type(2) .generic-row-content-wrapper .cta {
+  background: $sea-green;
+}
+.generic-row:nth-of-type(2) .generic-row-content-wrapper h2 {
+  color: $sea-green;
+}
+.generic-row:nth-of-type(3) .generic-row-content-wrapper .cta  {
+  background: $baby-blue;
+}
+.generic-row:nth-of-type(3) .generic-row-content-wrapper h2 {
+  color: $baby-blue;
+}
+.generic-row:nth-of-type(4) .generic-row-content-wrapper .cta  {
+  background: $pink;
+}
+.generic-row:nth-of-type(4) .generic-row-content-wrapper h2 {
+  color: $pink;
+}
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
 
-        a {
-            color: $color-white;
-            &:after {
-                content:"→";
-                color: inherit;
-                padding-left: 5px;
-            }
-        }
-    }
 }
-@media only screen and (max-width: $max-mobile-width) {
-    .generic-row .generic-row-content-wrapper {
-        padding-left: $spacer-xs;
-        padding-right: $spacer-xs;
-        width: 100%;
-    }
-    .generic-row:nth-of-type(odd) .generic-row-media-wrapper {
-        order: 0;
-    }
-    .generic-row .generic-row-media-wrapper {
-        width: 100%;
-    }
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
 }
-@media only screen and (max-width: $max-small-mobile-width) {
-    .generic-row .generic-row-content-wrapper .cta {
-        width: 100%;
-    }
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .generic-row .generic-row-content-wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  .generic-row:nth-of-type(odd) .generic-row-media-wrapper{
+    order: 0;
+  }
+  .generic-row .generic-row-media-wrapper {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .generic-row .generic-row-content-wrapper .cta {
+    width: 100%;
+  }
 }

@@ -1,0 +1,41 @@
+
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .row {
+    padding: 15px;
+  }
+  .row .content, .row .media {
+    width: calc(100% - 15px);
+  }
+  .row .host-event-card {
+    width: 50%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .home.row {
+    padding: 30px;
+  }
+  .row {
+    padding: 0;
+  }
+  .row .host-event-card {
+    width: 100%;
+  }
+}

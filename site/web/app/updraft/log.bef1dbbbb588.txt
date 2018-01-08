@@ -1,0 +1,82 @@
+0000.007 () Opened log file at time: Tue, 19 Dec 2017 22:37:59 +0000 on http://frieda-garcia-park.dev/wp
+0000.007 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.13.1.1 WP: 4.9.1 PHP: 7.0.26-2+ubuntu16.04.1+deb.sury.org+2 (fpm-fcgi, Linux frieda-garcia-park 4.4.0-66-generic #87-Ubuntu SMP Fri Mar 3 15:29:05 UTC 2017 x86_64) MySQL: 5.5.5 WPLANG: en_US Server: nginx/1.13.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 36M | 2M) multisite: N openssl: OpenSSL 1.1.0g  2 Nov 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.007 () Free space on disk containing Updraft's temporary directory: 183987.5 MB
+0000.010 () Restore job started. Entities to restore: themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":false,"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false}
+0000.057 () Entity: db
+0000.057 () restore_backup(backup_file=backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-db.gz, type=db, info=a:0:{}, last_one=)
+0000.057 () Unpacking backup... (backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-db.gz, 0.4 Mb)
+0001.009 () Database successfully unpacked
+0001.013 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0001.014 () Using direct MySQL access; value of use_mysqli is: 1
+0001.031 () Tried to raise max_allowed_packet from 1 MB to 32 MB, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0001.031 () Max packet size: 1 MB
+0001.031 () Entering maintenance mode
+0001.031 () Enabling Maintenance mode&#8230;
+0001.036 () Backup of: http://frieda-garcia-park.dev/wp
+0001.037 () Site home: http://frieda-garcia-park.dev
+0001.037 () Content URL: http://frieda-garcia-park.dev/app
+0001.037 () Uploads URL: http://frieda-garcia-park.dev/app/uploads
+0001.037 () Old table prefix: wp_
+0001.037 () Site information: multisite=0
+0001.038 () New table prefix: wp_
+0001.044 () Processing table (InnoDB): wp_options
+0001.252 () Restoring prior UD configuration (table: wp_options; keys: 3)
+0001.267 () Processing table (InnoDB): wp_users
+0001.283 () Processing table (InnoDB): wp_usermeta
+0001.299 () Processing table (InnoDB): wp_commentmeta
+0001.315 () Processing table (InnoDB): wp_comments
+0001.333 () Processing table (InnoDB): wp_links
+0001.343 () Processing table (InnoDB): wp_postmeta
+0001.468 () Processing table (InnoDB): wp_posts
+0001.509 () Processing table (InnoDB): wp_term_relationships
+0001.524 () Processing table (InnoDB): wp_term_taxonomy
+0001.538 () Processing table (InnoDB): wp_termmeta
+0001.549 () Processing table (InnoDB): wp_terms
+0001.560 () Processing table (InnoDB): wp_alm
+0001.567 () Processing table (InnoDB): wp_bwg_album
+0001.573 () Database queries processed: 50 in 0.55 seconds
+0001.574 () Processing table (InnoDB): wp_bwg_album_gallery
+0001.580 () Processing table (InnoDB): wp_bwg_gallery
+0001.588 () Processing table (InnoDB): wp_bwg_image
+0001.596 () Processing table (InnoDB): wp_bwg_image_comment
+0001.602 () Processing table (InnoDB): wp_bwg_image_rate
+0001.609 () Processing table (InnoDB): wp_bwg_image_tag
+0001.616 () Processing table (InnoDB): wp_bwg_shortcode
+0001.624 () Processing table (InnoDB): wp_bwg_theme
+0001.640 () Processing table (InnoDB): wp_huge_itgallery_gallerys
+0001.648 () Processing table (InnoDB): wp_huge_itgallery_images
+0001.659 () Processing table (InnoDB): wp_huge_itgallery_like_dislike
+0001.666 () Processing table (InnoDB): wp_ngg_album
+0001.675 () Processing table (InnoDB): wp_ngg_gallery
+0001.683 () Processing table (InnoDB): wp_ngg_pictures
+0001.691 () Unlocking database and leaving maintenance mode
+0001.691 () Disabling Maintenance mode&#8230;
+0001.691 () Finished: lines processed: 88 in 0.67 seconds
+0001.692 () Cleaning up rubbish...
+0001.692 () Begin search and replace (updraftplus_restored_db)
+0001.692 () [Database-replace-site-url] Database: search and replace site URL
+0001.693 () This option was not selected.
+0001.702 () Entity: themes
+0001.702 () restore_backup(backup_file=backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-themes.zip, type=themes, info=a:2:{s:4:"path";s:54:"/srv/www/frieda-garcia-park.com/current/web/app/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0001.703 () Unpacking backup... (backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-themes.zip, 19.5 Mb)
+0029.711 () Moving old data: filesystem method / updraft_dir is potentially possible
+0029.713 () Moving old data: can potentially use wp_filesystem method / -old
+0029.713 () Moving old data out of the way...
+0029.821 () Top-level entities being moved: twentyseventeen, index.php, .gitkeep, sage
+0029.826 () Moving unpacked backup into place...
+0036.754 () Top-level entities being moved: twentyseventeen, .DS_Store, .gitkeep, front-page.php, sage
+0036.764 () Cleaning up rubbish...
+0036.771 () Entity: uploads
+0036.771 () restore_backup(backup_file=backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:55:"/srv/www/frieda-garcia-park.com/current/web/app/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0036.771 () Unpacking backup... (backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-uploads.zip, 28.9 Mb)
+0038.630 () Moving old data: filesystem method / updraft_dir is potentially possible
+0038.631 () Moving old data: can potentially use wp_filesystem method / -old
+0038.631 () Moving old data out of the way...
+0038.639 () Moving unpacked backup into place...
+0038.850 () Cleaning up rubbish...
+0038.861 () Entity: others
+0038.861 () restore_backup(backup_file=backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-others.zip, type=others, info=a:2:{s:4:"path";s:47:"/srv/www/frieda-garcia-park.com/current/web/app";s:11:"description";s:6:"Others";}, last_one=1)
+0038.861 () Unpacking backup... (backup_2017-12-18-1503_Friends_of_Frieda_Garcia_Park_3a2a9828f1c4-others.zip, 0 Mb)
+0038.909 () Cleaning up rubbish...
+0038.931 () Restore successful!
+0038.932 () Restore successful

@@ -1,48 +1,25 @@
-.card-alt-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 30px 0;
-}
 .card-alt-row {
     display: flex;
     flex-flow: row wrap;
+    max-width: $max-container-width;
     justify-content: space-between;
-    max-width: $max-row-container-width;
-    padding: 0 $spacer-xs;
+    margin: 0 auto;
+    @media only screen and (max-width : 768px)  {
+        // justify-content: flex-start;
+        padding: 15px;
+    }
 }
 .card-alt {
-    align-items: center;
-    background-color: $color-tertiary;
-    display: inline-flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: $spacer-xs auto;
+    // background-color: #ddd;
+    border: 1px solid $dark-grey;
     width: 24%;
-
-    @media only screen and (max-width: $max-small-desktop-width) {
+    margin-bottom: 1%;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width : 768px)  {
         width: 49%;
     }
-
-    @media only screen and (max-width: $max-small-mobile-width) {
-        width: 100%;
-    }
-
-    .card-alt-media-wrapper {
-        align-items: center;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        padding: $spacer-xs;
-    }
-    .card-alt-content-wrapper {
-        align-items: flex-start;
-        background-color: $color-white;
-        border: 1px solid $color-tertiary;
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        padding: $spacer-xs;
-        width: 100%;
-    }
 }
+

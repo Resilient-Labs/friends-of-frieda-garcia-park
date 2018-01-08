@@ -1,74 +1,309 @@
-.footer {
-    background: $color-primary;
-    color: $color-white;
+footer{
+  display: flex;
+  width: 100%;
+  background: $sea-green;
+  clear: both;
+  color: $white;
+  font-family: $rob-sec;
+  font-size: $f-size;
+  margin-top: 45px;
+  padding: 15px 45px;
+  flex-flow: row wrap;
+  justify-content: center;
+  .footer-row {
+    max-width: $max-container-width;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 45px;
-    width: 100%;
-
-    .footer-row {
-      max-width: $max-row-container-width;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      padding: $spacer-xs;
+  }
+  section{
+    padding: 10px;
+    width: 33%;
+    p {
+      font-size: 1.15rem;
     }
-    .footer-content-wrapper {
-
-      &:nth-of-type(1) {
-        width: 66%;
-      }
-      &:nth-of-type(2) {
-        width: 32%;
-      }
-
-      @media only screen and (max-width: $max-mobile-width) {
-        width: 100%;
-        &:nth-of-type(1),
-        &:nth-of-type(2) {
-          width: 100%;
-        }
-      }
-    }
-    .footer-navigation-wrapper {
-      width: 100%;
-      ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        padding: 0;
-
-        @media only screen and (max-width: $max-mobile-width) {
-          flex-flow: column wrap;
-        }
-      }
-    }
-    .btn {
-      background: $color-white;
-      border-style: none;
-      color: $color-primary;
-    }
-    ul {
+    ul{
       list-style-type: none;
     }
-    .footer-footnote {
-      display: flex;
-      text-align: right;
-      justify-content: space-between;
-      width: 100%;
-      align-items: center;
+    li{
+      color: $white;
+      font-size: 1.15rem;
     }
-    small {
-      text-align: left;
-      display: block;
-      width: 100%;
-    }
-    a:not(.btn) {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
+    a{
+      button{
+        background: $white;
+        border-style: none;
+        color: $sea-green;
+        font-size: $f-size;
+        font-weight: bolder;
+        padding: 15px;
+      }
+      &:hover{
+        color: $pink;
       }
     }
   }
+  .footer-footnote {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+  }
+  small{
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .social {
+    display: inline-flex;
+  }
+  .fa{
+    color: $white;
+    margin-left: 20px;
+  }
+}
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  footer {
+    section{
+      small{
+        font-size: .8rem;
+        text-align: left;
+        width: 50%;
+      }
+    }
+    .footer-footnote{
+      padding: 0px;
+      width: 100%;
+      .social{
+        float: left;
+        padding: 15px;
+        width: 50%;
+        a{
+          float: left;
+          margin: 0 auto;
+          padding: 0px;
+          text-align: center;
+          width: 33.33%;
+        }
+      }
+    }
+    .fa{
+      margin-left: 0px;
+      padding: 0px;
+      width: 100%;
+    }
+  }
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+  footer {
+    section{
+      font-size: 1.15rem;
+      padding: 15px;
+      width: calc(50% - 15px);
+      small{
+        display: block;
+        width: 50%;
+        text-align: left;
+        float: left;
+        font-size: .8rem;
+      }
+      &:first-child{
+        width: 100%;
+        a{
+          display: block;
+          width: 80%;
+          button{
+            display: block;
+          }
+        }
+      }
+      &:nth-of-type(2){
+          text-align: left;
+          ul{
+            width: 80%;
+            text-align: left;
+          }
+    }
+    &:nth-of-type(3){
+      text-align: left;
+      a{
+        display: block;
+      }
+      li{
+        border-style: none;
+        margin: 0px;
+        font-size: 1.15rem;
+      }
+    }
+    h2{
+      font-size: 1.6rem;
+    }
+    .footer-footnote{
+      height: auto;
+      width: 100%;
+      .social{
+        padding: 0;
+        width: 50%;
+        float: right;
+        a{
+          width: 33.33%;
+          text-align: center;
+          margin: 0 auto;
+          .fa{
+            margin-left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  footer {
+    section:nth-of-type(2) a{
+      word-wrap: break-word;
+    }
+    section:nth-of-type(3){
+      text-align: left;
+      ul{
+        a{
+          width: 100%;
+          display: block;
+        }
+        li{
+          display: block;
+          border-style: none;
+          margin: 0;
+          padding-top: 5px;
+          font-size: 1.15rem;
+        }
+      }
+    }
+    .footer-footnote{
+      width: 100%;
+      small{
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: left;
+        font-size: .8rem;
+        transform: none;
+      }
+      .social{
+        display: inline-flex;
+        padding: 0;
+        width: 100%;
+        a{
+          margin: 7.5px;
+          text-align: center;
+          float: left;
+          margin: 0 auto;
+          .fa{
+            margin-left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  footer {
+      padding: 15px 30px;
+      section{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        text-align: center;
+        border-style: none;
+        &:first-child {
+          text-align: left;
+          width: 100%;
+          h2{
+            padding: 0px;
+          }
+          a {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding-top: 30px;
+          }
+        }
+        h2{
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        a{
+          button{
+            display: block;
+            margin: 0 auto;
+          }
+        }
+        &:nth-of-type(2){
+          text-align: center;
+        }
+        &:nth-of-type(3){
+          h2{
+            transform: none;
+          }
+          ul{
+            padding: 0px;
+            text-align: center;
+            a{
+              display: inline;
+              width: 20%;
+              height: auto;
+            }
+            li{
+              display: block;
+              margin: 20px 0px 15px 5px;
+              padding: 0px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .footer-footnote{
+        display: block;
+        position: relative;
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+        a{
+          width: 33.33%;
+          padding: 0px;
+        }
+        small{
+          width: 100%;
+          position: relative;
+        }
+        .social{
+          text-align: left;
+          padding: 0px;
+          width: 100%;
+          margin: 30px 0;
+          .fa{
+            display: block;
+            width: 100%;
+            padding: 0;
+          }
+        }
+      }
+  }
+}

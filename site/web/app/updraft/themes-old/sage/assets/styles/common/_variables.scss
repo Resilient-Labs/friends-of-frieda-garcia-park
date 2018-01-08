@@ -1,0 +1,23 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+$spacer: 15px;
+// Colors
+$sea-green:             rgba(128,202,165,1);
+$white:                 rgba(255,255,255,1);
+$dark-grey:             rgba(51,51,51,1);
+$baby-blue:             rgba(170,223,241,1);
+$gold:                  rgba(252,236,152,1);
+$pink:                  rgba(247,165,170,1);
+//Fonts
+$font-primary: 'Roboto Slab', 'Roboto Slab Regular', 'Open Sans' Helvetica, sans-serif;
+$font-secondary: 'Roboto Slab', 'Roboto Slab Light', 'Open Sans' Helvetica, sans-serif;
+$rob-prime:             "Roboto Slab Regular", "Roboto Slab", "Open Sans", Helvetica, sans-serif;
+$rob-sec:               "Roboto Slab Light", "Roboto Slab", "Open Sans", Helvetica, sans-serif;
+//REM Sizes
+$f-size:                1rem;
+$h-size:                1.3rem;
+$a-size:                1.5rem;
+$test:                  1px solid black;
+$max-container-width: 1120px

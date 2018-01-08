@@ -1,0 +1,112 @@
+.generic-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding: 30px 0;
+  
+  .generic-row-media-wrapper{
+    // background: $sea-green;
+  }
+  &:first-of-type{
+    margin-top: 30px;
+  }
+  &:nth-of-type(odd) {
+    .generic-row-media-wrapper {
+      order: 2;
+      img {
+        top: -15px;
+        left: 15px;
+        width: 100%;
+      }
+    }
+  }
+  .generic-row-media-wrapper,
+  .generic-row-content-wrapper{
+    margin: 30px;
+    width: calc(50% - 60px);
+  }
+  .generic-row-content-wrapper {
+    h2 {
+      font-size: $h-size * 1.5;
+    }
+  }
+  img {
+    top: -15px;
+    left: -15px;
+    width: 100%;
+  }
+  .cta {
+    color: $white;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+  }
+}
+.generic-row:nth-of-type(2) .generic-row-media-wrapper {
+  border: 1px solid $sea-green;
+}
+.generic-row:nth-of-type(3) .generic-row-media-wrapper {
+  border: 1px solid $baby-blue;
+}
+.generic-row:nth-of-type(4) .generic-row-media-wrapper {
+  border: 1px solid $pink;
+}
+.generic-row:nth-of-type(2) .generic-row-content-wrapper .cta {
+  background: $sea-green;
+}
+.generic-row:nth-of-type(2) .generic-row-content-wrapper h2 {
+  color: $sea-green;
+}
+.generic-row:nth-of-type(3) .generic-row-content-wrapper .cta  {
+  background: $baby-blue;
+}
+.generic-row:nth-of-type(3) .generic-row-content-wrapper h2 {
+  color: $baby-blue;
+}
+.generic-row:nth-of-type(4) .generic-row-content-wrapper .cta  {
+  background: $pink;
+}
+.generic-row:nth-of-type(4) .generic-row-content-wrapper h2 {
+  color: $pink;
+}
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .generic-row .generic-row-content-wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  .generic-row:nth-of-type(odd) .generic-row-media-wrapper{
+    order: 0;
+  }
+  .generic-row .generic-row-media-wrapper {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .generic-row .generic-row-content-wrapper .cta {
+    width: 100%;
+  }
+}

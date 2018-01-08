@@ -1,0 +1,227 @@
+/*-----------------------------------
+# Blog Page
+------------------------------------*/
+.blog-page {
+  max-width: $max-container-width;
+  margin: 30px auto;
+  
+  .custom-pagination {
+    display: block;
+    float: left;
+    padding: 30px;
+    position: relative;
+  }
+}
+a.page-numbers:not(.next),
+span.page-numbers.current{
+    padding: 5px 15px;
+    background: $pink;
+    color: $white;
+}
+a.prev.page-numbers{
+    background: none;
+    color: $dark-grey;
+    padding: 15px;
+}
+a.next.page-numbers{
+  padding: 15px;
+}
+span.page-numbers.current{
+  background: $dark-grey;
+  color: $white;
+}
+section.blog-page-posts{
+  display: inline-block;
+  width: calc(70% - 15px);
+}
+.blog-post-row {
+  clear: both;
+  display: block;
+  float: left;
+  margin: 30px auto;
+  width: 100%;
+}
+.blog-post-row .img-wrap {
+  float: left;
+  border: 1px solid $pink;
+  width: 25%;
+}
+.blog-post-row .img-wrap img {
+  top: -15px;
+  left: -15px;
+  width: 100%;
+}
+.blog-post-row article {
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+  width: calc(70% - 15px);
+}
+.blog-post-row article .content {
+  display: block;
+  width: 100%;
+}
+.blog-post-row article .content h2{
+  margin: 0;
+  font-size: $h-size;
+  }
+.blog-post-row article .content p{
+  font-size: $f-size;
+  }
+  /*-----------------------------------
+  # Blog Post
+  ------------------------------------*/
+  .hero.banner {
+    background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 1));
+    height: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+  .hero.banner img {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    opacity: .3;
+    width: 100%;
+  }
+  .hero.banner h3{
+      font-size: $h-size;
+    }
+  .single-blog-post-content {
+    display: block;
+    font-size: $f-size;
+    margin: 30px auto;
+  }
+  .single-blog-post-content>article {
+    border: 1px solid $pink;
+    margin: 0 auto;
+    max-width: $max-container-width;
+    width: calc(100% - 60px);
+    padding: 30px;
+    text-align: left;
+  }
+  .single-blog-post-content div p {
+    clear: both;
+    display: block;
+    font-size: 16px;
+  }
+  .single-blog-post-content .btn {
+    background: $pink;
+    color: $white;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  .single-blog-post-content img {
+    display: inline-block;
+    float: left;
+    padding: 15px;
+    width: 50%;
+  }
+  /*-----------------------------------
+  ## Wide Screens, Large Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 1200px) {
+    .middle section, .single-blog-post-content section {
+      margin: 30px;
+    }
+  }
+  /*-----------------------------------
+  ## Desktops, Medium Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 992px)  {
+    .hero.banner {
+      height: 400px;
+    }
+    .mainImg {
+      height: 400px;
+    }
+    .middle section, .single-blog-post-content section {
+      margin: 30px;
+      padding: 30px;
+    }
+    section.blog-page-posts{
+      display: block;
+      padding: 15px;
+      width: 100%;
+    }
+    .blog-post-row {
+      clear: none;
+      display: inline-block;
+      margin: 15px auto;
+      padding: 15px 30px;
+      width: calc(50% - 15px);
+    }
+    .blog-post-row article {
+      padding: 0;
+      width: 100%;
+    }
+    .blog-post-row .img-wrap {
+      display: block;
+      margin: 15px auto;
+      width: 100%;
+    }
+    .blog-post-row .content {
+      clear: left;
+      width: 100%;
+    }
+    .blog-post-row .media {
+      width: 33%;
+    }
+  }
+  /*------------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 768px)  {
+    .hero.banner {
+      height: 360px;
+    }
+    .mainImg {
+      height: 320px;
+    }
+    .mainTitle, .mainImg h2 {
+      top: 25%;
+    }
+    .middle section, .single-blog-post-content section {
+      margin: 15px;
+      padding: 15px;
+    }
+    .single-blog-post-content img {
+      margin: 15px auto;
+      padding: 0;
+      width: 100%;
+    }
+    section.blog-page-posts {
+      display: block;
+      width: 100%
+    }
+    .blog-post-row {
+      width: calc(100%);
+    }
+  }
+  /*-----------------------------------
+  ## Phones, Extra Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width: 480px) {
+    .hero.banner {
+      height: 280px;
+    }
+    .mainImg {
+      height: 100%;
+    }
+    .mainTitle, .mainImg h2 {
+      top: 15%;
+    }
+    .single-blog-post-content .middleLink, .single-blog-post-content .btn {
+      margin: 15px auto;
+    }
+    .blog-post-row .content {
+      width: 100%;
+    }
+    .blog-post-row .img-wrap {
+      width: 100%;
+    }
+  }

@@ -1,14 +1,18 @@
 <?php while (have_posts()) : the_post(); ?>
-  <article class="layout content-single">
-    <div class="content-single-header">
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
-    </div>
+  <section class="hero banner">
+    <h3><?php the_title(); ?></h3>
+    <img src="<?php echo get_field('blog-post-image');?>"/>
+  </section>
+<section class="single-blog-post-content">
+  <article <?php post_class(); ?>>
+    <?php get_template_part('templates/entry-meta'); ?>
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <div class="content-single-footer">
-      <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-    </div>
+    <a class="btn" href="<?php echo home_url();?>/blog">
+        <i class="fa fa-long-arrow-left"></i> Back to Blog
+    </a>
   </article>
+</section>
+<?php comments_template('/templates/comments.php'); ?>
 <?php endwhile; ?>
